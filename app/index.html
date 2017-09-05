@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Weather Api</title>
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+</head>
+<body>
+<header class="weater-header">
+	<div class="weater-header__img">
+	</div>
+</header>
+<div class="container weater-container">
+	<div class="col-lg-12 weater-search__btn">
+    <div class="input-group ">
+      <input type="text" class="form-control weater-search__btn-input" placeholder="Add new city" aria-describedby="sizing-addon1">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+    </div>
+  </div>
+	<div class="row weater-card__container">
+		<template id="template-card">
+			<div class="col-md-3">
+        <div class="box">
+            <img src="img/sol.png" alt="" class="weater-card__icon">
+        </div>
+    	</div>
+	    <div class="col-md-4">
+	        <div class="box">
+	            <h3>max</h3>
+	            <h3>min</h3>
+	            <h1>grados</h1>
+	        </div>
+	    </div>
+	    <div class="col-md-5">
+	        <div class="box">
+	            <h2>city</h2>
+	            <h3>date</h3>
+	        </div>
+	    </div>
+    </template>
+	</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

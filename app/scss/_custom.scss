@@ -1,0 +1,48 @@
+/*--------------------------
+----------COLORS------------*/
+
+$color-one: #f1f6f5;  // aqua light
+$color-two: #9ef4e6;  // aqua
+$color-three: #12cc94;  // green
+$color-four: #6088bb;  //blue
+$color-letter-search : #7c8083; // gray light
+/*--------------------------
+--------MODIFICATIONS-------*/
+body{
+	background-color: $color-one !important;
+}
+
+.form-control:focus {
+  color: $color-letter-search !important;
+  border-color: $color-two !important;
+  outline: none;
+}
+
+.input-group-addon{ 
+	margin-right: -1px;
+}
+
+
+/*--------------------------
+----------NORMALS----------*/ 
+.weater-header{
+	height: 70vh;
+	.weater-header__img{
+		background-image: url("../../img/sky-wallpapers.jpg");
+		background-size: cover;
+		height: 100%;
+	}
+}
+	.weater-search__btn{
+		border-radius: 3px;
+		top: -33px;
+		.weater-search__btn-input{
+			padding: 1em !important;
+		}
+	}
+
+	.weater-card__container{
+		.weater-card__icon{
+			width: 100%;
+		}
+}
